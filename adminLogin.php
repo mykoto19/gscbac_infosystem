@@ -55,7 +55,7 @@
     <div class="container">
       <div class="row">      
         <div class="imgcontainer col-8-lg mx-auto">
-          <img src="avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
+          <img src="images/avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
           <h3>ADMIN Login</h3>
         </div>
       </div>
