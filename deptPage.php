@@ -14,7 +14,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   	<meta name="description" content="">
   	<meta name="author" content="">
 
-	<title>Department Page GSC-BAC Information System</title>
+	<title><?php echo $_SESSION['College']; ?> GSC-BAC Information System</title>
 
 	<!-- Bootstrap core CSS -->
   	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +37,8 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 		require_once 'core/initdb.php';
 
 		$sql = "SELECT * FROM itemtbl WHERE featured = 1";
+
+		
     	$featured = $db->query($sql);
 	?>
 
@@ -60,9 +62,9 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
     	</div>
   	</nav>
 
-  	<header class="bg-secondary text-white">
+  	<header class="bg-secondary text-white" style="height:120px; padding: 100px;">
     	<div class="container text-center">
-      		<h1 class="display-4"><?php echo $_SESSION['College']; ?></h1>
+      		<h1 class="display-5"><?php echo $_SESSION['College']; ?></h1>
     	</div>
   	</header>
 

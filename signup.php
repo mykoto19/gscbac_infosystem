@@ -17,6 +17,23 @@
     <!-- Custom styles for this template -->
   	<link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <link herf="style1.css" rel="stylesheet">
+
+    <style>
+        section div.container {
+            margin: 0px 100px 0px 100px;
+            padding: 0px 100px 0px 100px;
+            border: 10px;
+            
+            background-color: skyblue;
+        }
+    </style>
+<!--
+    border-style: double;
+            border-width: 5px;
+-->
+
+
 </head>
 <body id="page-top">
 
@@ -38,46 +55,48 @@
   </nav>
 
   <section>
-  	<div class="container">
-  		<div class="text-center">
-  				<h1>Sign Up</h1>
-  				<p>Please fill in this form to sign up for bidding.</p>	
-  		</div>
-  	</div>
-  	<br>
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-8-lg mx-auto">
-  				<form action="/action.php">
-  					<div class="form-group">
-              <label for="name"><b>Company/Supplier Name:</b></label>
-              <input type="text" class="form-control" placeholder="Enter Supplier Name" id="name" required>
-              <br>
-              <label for="rname"><b>Representative Name:</b></label>
-              <input type="text" class="form-control" placeholder="First Name" id="fname" required>
-              <input type="text" class="form-control" placeholder="Lastname Name" id="lname" required>
-              <br>
-  						<label for="email"><b>Email:</b></label>
-    					<input type="email" class="form-control" placeholder="Enter Email" id="email" required>
-    					<br>
-    					<label for="psw"><b>Password:</b></label>
-    					<input type="password" class="form-control" placeholder="Enter Password" id="psw" required>
-    					<br>
-    					<label for="psw-repeat"><b>Repeat Password:</b></label>
-    					<input type="password" class="form-control" placeholder="Repeat Password" id="psw-repeat" required>
-    					<br>
+  	<div class="container mt-0">
+      <div class="d-flex flex-column mb-3">
+        <div class="p-3 text-center">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to sign up for bidding.</p>	
+        </div>
+      
+        <br>
+      
+        <div class="row">
+          <div class="p-5 col-8-lg mx-auto" style="background-color: #f1f1f1; box-shadow: 10px 10px;">
+            <form action="/action.php">
+              <div class="form-group">
+                <label for="name"><b>Company/Supplier Name:</b></label>
+                <input type="text" class="form-control" placeholder="Enter Supplier Name" id="name" required>
+                <br>
+                <label for="rname"><b>Representative Name:</b></label>
+                <input type="text" class="form-control" placeholder="First Name" id="fname" required>
+                <input type="text" class="form-control" placeholder="Lastname Name" id="lname" required>
+                <br>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" class="form-control" placeholder="Enter Email" id="email" required>
+                <br>
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" class="form-control" placeholder="Enter Password" id="psw" required>
+                <br>
+                <label for="psw-repeat"><b>Repeat Password:</b></label>
+                <input type="password" class="form-control" placeholder="Repeat Password" id="psw-repeat" required>
+                <br>
 
-    					<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-    					<div class="text-center">
-    						<button type="submit" class="btn btn-primary">Sign Up</button>
-      						<button type="reset" class="btn btn-primary">Cancel</button>
-    					</div>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
-  	</div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <button type="reset" class="btn btn-primary">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer class="py-4 bg-dark">
@@ -86,6 +105,16 @@
     </div>
     <!-- /.container -->
   </footer>
+
+   <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
 </html>

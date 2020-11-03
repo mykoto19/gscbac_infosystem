@@ -51,7 +51,7 @@
     </div>
   </nav>
 
-  <section>
+  <section style="background-color:#f1f1f1;">
     <div class="container">
       <div class="row">      
         <div class="imgcontainer col-8-lg mx-auto">
@@ -75,7 +75,7 @@
               <label for="usr"><b>Admin ID:</b></label>
               <input type="text" class="form-control" name="usr" placeholder="Enter your ID">
               <br>
-              <label for="pwd"><b>Password:</b></label>
+              <label for="pswd"><b>Password:</b></label>
               <input type="password" class="form-control" placeholder="Enter password" name="pswd">
             </div>
             <div class="form-group form-check">
@@ -100,6 +100,16 @@
     </div>
     <!-- /.container -->
   </footer>
+
+   <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
 

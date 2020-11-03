@@ -55,7 +55,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	</nav>
 
   	<header class="bg-secondary text-white">
-    	<div class="container text-center">
+    	<div class="container text-center" style="padding: 0px 100px 0px 100px;">
       		<h1>Guimaras State College</h1>
       		<h1 class="display-4">Bids and Awards Committee</h1>
       		<h1 class="display-4">Information System</h1>

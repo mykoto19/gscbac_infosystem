@@ -19,7 +19,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title"><?= $item['itemName']; ?></h4>
-            
+           
             <button class="close" type="button" onclick="closeModal()" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -36,7 +36,7 @@
                   <h4>Details</h4>
                   <p><?= $item['itemDetails']; ?></p>
                   <hr>
-                  <p class="text-primary"><b>P<?= $item['itemCost']; ?></</b></p>
+                  <p class="text-primary"><b>Price: P<?= $item['itemCost']; ?></</b></p>
                   <p class="text-primary"><b>Type: <?= $type['typeName']; ?></</b></p>
                   
                 </div>
@@ -50,6 +50,9 @@
         </div>
       </div>
     </div>
+
+    
+    
     <script>
       function closeModal(){
         jQuery('#details-modal').modal('hide');
