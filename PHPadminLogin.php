@@ -14,6 +14,7 @@ if (isset($_POST['usr']) && isset($_POST['pswd'])){
 
 	$uname = validate($_POST['usr']);
 	$pass = validate($_POST['pswd']);
+	
 
 	if (empty($uname)) {
 		header("Location: adminLogin.php?error=Admin ID is required");

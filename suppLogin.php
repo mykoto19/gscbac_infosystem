@@ -64,7 +64,10 @@
             			<div class="text-center">
               				<button type="submit" class="btn btn-primary">Login</button>
               				<button type="reset" class="btn btn-primary">Reset</button>
-            			</div>
+						</div>
+						<div>
+							<a href="signup.php">Create an account</a>
+						</div>
           			</form>
 
         		</div>
