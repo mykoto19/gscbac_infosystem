@@ -10,13 +10,13 @@
 
   <title>GSC-BAC Information System</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="../css/scrolling-nav.css" rel="stylesheet">
 
   <style>
     .error {
@@ -44,7 +44,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Back to Dashboard</a>
+            <a class="nav-link js-scroll-trigger" href="../index.html">Back to Dashboard</a>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@
     <div class="container">
       <div class="row">      
         <div class="imgcontainer col-8-lg mx-auto">
-          <img src="images/avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
+          <img src="avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
           <h3>ADMIN Login</h3>
         </div>
       </div>
@@ -102,14 +102,14 @@
   </footer>
 
    <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script src="../js/scrolling-nav.js"></script>
 
 </body>
 

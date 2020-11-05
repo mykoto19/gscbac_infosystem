@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'core/initdb.php';
+include '../core/initdb.php';
 
 if (isset($_POST['usr']) && isset($_POST['pswd'])){
 
@@ -23,15 +23,16 @@ if (isset($_POST['usr']) && isset($_POST['pswd'])){
 		header("Location: adminLogin.php?error=Password is required");
 		exit();
 	}else{
+
 		$sql = "SELECT * FROM admintb WHERE AdminName='$uname' AND AdminPass='$pass'";
 		$result = mysqli_query($db, $sql);
-			if (mysqli_num_rows($result) === 1) {
+		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
 			if ($row['AdminName'] === $uname && $row['AdminPass'] === $pass) {
 				$_SESSION['AdminName'] = $row['AdminName'];
 				$_SESSION['AdminID'] = $row['AdminID'];
-				$_SESSION['AdminPass'] = $row['AdminPass'];
 				header("Location: adminPage.php");
+				echo "Nicely Done";
 				exit();
 			}else{
 				header("Location: adminLogin.php?error=Incorrect Admin ID or Password");

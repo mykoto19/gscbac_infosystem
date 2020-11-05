@@ -10,10 +10,10 @@
 	<title>Admin Page GSC-BAC Information System</title>
 
 	<!-- Bootstrap core CSS -->
-  	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   	<!-- Custom styles for this template -->
-  	<link href="css/scrolling-nav.css" rel="stylesheet">
+  	<link href="../css/scrolling-nav.css" rel="stylesheet">
 </head>
 <body id="page-top">
 

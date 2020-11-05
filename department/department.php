@@ -9,13 +9,13 @@
 
 	<title>GSC-BAC Information System</title>
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 
 	<!-- Bootstrap core CSS -->
-  	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   	<!-- Custom styles for this template -->
-  	<link href="css/scrolling-nav.css" rel="stylesheet">
+  	<link href="../css/scrolling-nav.css" rel="stylesheet">
 
   	<style>
     	.error {
@@ -40,7 +40,7 @@
 	      	<div class="collapse navbar-collapse" id="navbarResponsive">
 	        	<ul class="navbar-nav ml-auto">
 	          	<li class="nav-item">
-	            	<a class="nav-link js-scroll-trigger" href="Login.html">Back to Login Page</a>
+	            	<a class="nav-link js-scroll-trigger" href="../Login.html">Back to Login Page</a>
 	          	</li>
 	        	</ul>
 	      	</div>
@@ -94,14 +94,14 @@
   </footer>
 
    <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script src="../js/scrolling-nav.js"></script>
 
 </body>
 </html>

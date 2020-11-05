@@ -17,10 +17,10 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 	<title><?php echo $_SESSION['College']; ?> GSC-BAC Information System</title>
 
 	<!-- Bootstrap core CSS -->
-  	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   	<!-- Custom styles for this template -->
-  	<link href="css/scrolling-nav.css" rel="stylesheet">
+  	<link href="../css/scrolling-nav.css" rel="stylesheet">
 
   	<style>
   		img.details{
@@ -34,7 +34,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 <body id="page-top">
 
 	<?php 
-		require_once 'core/initdb.php';
+		require_once '../core/initdb.php';
 
 		$sql = "SELECT * FROM itemtbl WHERE featured = 1";
 
@@ -115,20 +115,20 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   	
 
   	<!-- Bootstrap core JavaScript -->
-  	<script src="vendor/jquery/jquery.min.js"></script>
-  	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  	<script src="../vendor/jquery/jquery.min.js"></script>
+  	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   	<!-- Plugin JavaScript -->
-  	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  	<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   	<!-- Custom JavaScript for this theme -->
-  	<script src="js/scrolling-nav.js"></script>
+  	<script src="../js/scrolling-nav.js"></script>
 
   	<script>
       function detailsmod(id){
       	var data = {"id" : id};
       	jQuery.ajax({
-      		url : <?= BASEURL; ?> +'includes/detailsmod.php',
+      		url : <?= BASEURL; ?> +'../includes/detailsmod.php',
       		method : "post",
       		data : data,
       		success : function(data){

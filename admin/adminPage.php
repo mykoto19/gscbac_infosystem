@@ -16,10 +16,10 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
 	<title>Admin Page GSC-BAC Information System</title>
 
 	 <!-- Bootstrap core CSS -->
-  	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   	<!-- Custom styles for this template -->
-  	<link href="css/scrolling-nav.css" rel="stylesheet">
+  	<link href="../css/scrolling-nav.css" rel="stylesheet">
 </head>
 <body id="page-top">
 
@@ -55,10 +55,10 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	</nav>
 
   	<header class="bg-secondary text-white">
-    	<div class="container text-center" style="padding: 0px 100px 0px 100px;">
-      		<h1>Guimaras State College</h1>
-      		<h1 class="display-4">Bids and Awards Committee</h1>
-      		<h1 class="display-4">Information System</h1>
+    	<div class="container text-center">
+      		
+      		<h1>Administrator Page</h1>
+      		
     	</div>
   	</header>
 
@@ -66,14 +66,14 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
     	<div class="container">
       		<div class="row">
         		<div class="col-lg-8 mx-auto">
-          			<h2>About this page</h2>
-          			<p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          			<ul>
-            			<li>Clickable nav links that smooth scroll to page sections</li>
-            			<li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            			<li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            			<li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          			</ul>
+          			<h2>This Page</h2>
+          			<p class="lead">This is a great place to talk about your webpage. 
+					  This template is purposefully unstyled so you can use it as a boilerplate or starting point 
+					  for you own landing page designs! This template features:</p>
+
+          			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					  Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, 
+					  doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
         		</div>
       		</div>
    		</div>
@@ -89,14 +89,14 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	</footer>
 
   	<!-- Bootstrap core JavaScript -->
-  	<script src="vendor/jquery/jquery.min.js"></script>
-  	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  	<script src="../vendor/jquery/jquery.min.js"></script>
+  	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   	<!-- Plugin JavaScript -->
-  	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  	<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   	<!-- Custom JavaScript for this theme -->
-  	<script src="js/scrolling-nav.js"></script>
+  	<script src="../js/scrolling-nav.js"></script>
 
 </body>
 </html>

@@ -17,7 +17,7 @@
     <!-- Custom styles for this template -->
   	<link href="css/scrolling-nav.css" rel="stylesheet">
 
-    <link herf="style1.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
 
     <style>
         section div.container {
@@ -172,7 +172,7 @@
                   <button type="reset" class="btn btn-primary">Cancel</button>
                 </div>
                 <div>
-							    <a href="suppLogin.php">Already have an account?</a>
+							    <a href="supplier/suppLogin.php">Already have an account?</a>
 						    </div>
               </div>
             </form>

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'core/initdb.php';
+include '../core/initdb.php';
 
 if (isset($_POST['usr']) && isset($_POST['pwd'])){
 
