@@ -79,11 +79,11 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
           	</div>
 
   			<div class="row">
-  				<!-- main content -->
-  				<div class="col-md-8">Main Content</div>
+  				<!-- left side bar -->
+  				<div class="col-md-2">Left Side Bar</div>
   			
-  				<!-- right side bar -->
-  				<div class="col-md-4">
+  				<!-- main content -->
+  				<div class="col-md-8">
           
               		<h2 class="text-center">Featured Items</h2>
               		<div class="row">

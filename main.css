@@ -1,11 +1,8 @@
-body{
-	padding-top: 50px;
+nav, footer {
+	background-color: #132743;
 }
 
-.header{
-	position: relative;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-	height: 600px;
+header {
+	background-color: #87431D;
+	background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
 }
