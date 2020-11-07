@@ -19,12 +19,14 @@
 
     <link href="style1.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="main.css">
+
     <style>
         section div.container {
             margin: 0px 100px 0px 100px;
             padding: 0px 50px 0px 50px;
             border: 10px;
-            background-color: orange;
+            background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
         }
 
         .error {
@@ -58,7 +60,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +85,7 @@
         </div>
       
         <div class="row">
-          <div class="p-5 col-8-lg mx-auto" style="background-color: #f1f1f1; box-shadow: 10px 10px;">
+          <div class="p-5 col-8-lg mx-auto" style="background-color: #838383; box-shadow: 10px 10px;">
 
             <form action="signup_check.php" method="post">
 
@@ -165,7 +167,7 @@
                        name="psw_repeat">
                 <br>
 
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary">Sign Up</button>
@@ -182,7 +184,7 @@
     </div>
   </section>
 
-  <footer class="py-4 bg-dark">
+  <footer class="py-4">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; GSC-BAC Information System 2020</p>
     </div>

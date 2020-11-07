@@ -18,6 +18,8 @@
   <!-- Custom styles for this template -->
   <link href="../css/scrolling-nav.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="../main.css">
+
   <style>
     .error {
       background: #F2DEDE;
@@ -27,6 +29,8 @@
       border-radius: 5px;
       margin: 20px auto;
     }
+
+    
   </style>
 
 
@@ -35,7 +39,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,51 +54,49 @@
       </div>
     </div>
   </nav>
+  <section>
+    <div class="card" style="background-color:#f1f1f1;">
+      <div class="card-body">
+        <div class="row">      
+          <div class="imgcontainer col-8-lg mx-auto">
+            <img src="avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
+            <h3>ADMIN Login</h3>
+          </div>
+        </div>  
 
-  <section style="background-color:#f1f1f1;">
-    <div class="container">
-      <div class="row">      
-        <div class="imgcontainer col-8-lg mx-auto">
-          <img src="avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
-          <h3>ADMIN Login</h3>
-        </div>
-      </div>
-    </div>
+        <br>
+        
+        <div class="row">      
+          <div class="col-8-lg mx-auto">
 
-    <br>
+            <form action="PHPadminLogin.php" method="post">
+              <?php if (isset($_GET['error'])) { ?>
+                <p class="error"><?php echo $_GET['error']; ?></p>
+              <?php } ?>
+              <div class="form-group">
+                <label for="usr"><b>Admin ID:</b></label>
+                <input type="text" class="form-control" name="usr" placeholder="Enter your ID">
+                <br>
+                <label for="pswd"><b>Password:</b></label>
+                <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="remember"> Remember me
+                </label>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
+              </div>
+            </form>
 
-    <div class="container">
-      <div class="row">      
-        <div class="col-8-lg mx-auto">
-
-          <form action="PHPadminLogin.php" method="post">
-            <?php if (isset($_GET['error'])) { ?>
-              <p class="error"><?php echo $_GET['error']; ?></p>
-            <?php } ?>
-            <div class="form-group">
-              <label for="usr"><b>Admin ID:</b></label>
-              <input type="text" class="form-control" name="usr" placeholder="Enter your ID">
-              <br>
-              <label for="pswd"><b>Password:</b></label>
-              <input type="password" class="form-control" placeholder="Enter password" name="pswd">
-            </div>
-            <div class="form-group form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="remember"> Remember me
-              </label>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Login</button>
-              <button type="reset" class="btn btn-primary">Reset</button>
-            </div>
-          </form>
-
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <footer class="py-4 bg-dark">
+  <footer class="py-4">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; GSC-BAC Information System 2020</p>
     </div>
