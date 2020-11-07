@@ -79,11 +79,11 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
           	</div>
 
   			<div class="row">
-  				<!-- left side bar -->
-  				<div class="col-md-2">Left Side Bar</div>
-  			
   				<!-- main content -->
-  				<div class="col-md-8">
+  				<div class="col-md-8">Main Content</div>
+  			
+  				<!-- right side bar -->
+  				<div class="col-md-4">
           
               		<h2 class="text-center">Featured Items</h2>
               		<div class="row">
@@ -128,7 +128,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
       function detailsmod(id){
       	var data = {"id" : id};
       	jQuery.ajax({
-      		url : <?= BASEURL; ?> +'../includes/detailsmod.php',
+      		url : <?= BASEURL; ?> +'includes/detailsmod.php',
       		method : "post",
       		data : data,
       		success : function(data){

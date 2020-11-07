@@ -20,7 +20,7 @@
 	<!-- Navigation -->
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     	<div class="container">
-      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
+      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> Records</a>
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         		<span class="navbar-toggler-icon"></span>
       		</button>
@@ -37,16 +37,18 @@
     	</div>
   	</nav>
 
-  	 <header class="bg-secondary text-white">
-    	<div class="container text-center">
-      		<h1>Records Received</h1>
-    	</div>
-  	</header>
+  	
 
   	<section>
-  		<div class="text-center">
-  			<h5>Records to be save</h5>
-  		</div>
+  		<div class="container-fluid">
+			  <div class="row">
+				  <!--Main Content-->
+				  <div class="col-md-8">Main Content</div>
+				<!--Right Side-->
+				  <div class="col-md-4">Right Side</div>
+			  </div>
+
+		</div>
   	</section>
 
   	<!-- Footer -->

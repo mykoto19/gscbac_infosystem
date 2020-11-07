@@ -26,13 +26,13 @@ if (isset($_POST['usr']) && isset($_POST['pswd'])){
 
 		$sql = "SELECT * FROM admintb WHERE AdminName='$uname' AND AdminPass='$pass'";
 		$result = mysqli_query($db, $sql);
+		
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
 			if ($row['AdminName'] === $uname && $row['AdminPass'] === $pass) {
 				$_SESSION['AdminName'] = $row['AdminName'];
 				$_SESSION['AdminID'] = $row['AdminID'];
 				header("Location: adminPage.php");
-				echo "Nicely Done";
 				exit();
 			}else{
 				header("Location: adminLogin.php?error=Incorrect Admin ID or Password");
