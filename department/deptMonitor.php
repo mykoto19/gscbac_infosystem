@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +14,7 @@
   	<meta name="description" content="">
   	<meta name="author" content="">
 
-	<title>Department Page GSC-BAC Information System</title>
+	<title><?php echo $_SESSION['College']; ?> GSC-BAC Information System</title>
 
 	<!-- Bootstrap core CSS -->
   	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -15,12 +22,19 @@
   	<!-- Custom styles for this template -->
   	<link href="../css/scrolling-nav.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="../main.css">
+
 </head>
 <body>
+
+	<?php 
+		require_once '../core/initdb.php';
+	?>
+
 	<!-- Navigation -->
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     	<div class="container">
-      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
+      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> <?php echo $_SESSION['College']; ?> Monitoring</a>
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         		<span class="navbar-toggler-icon"></span>
       		</button>
@@ -52,7 +66,7 @@
 	  </section>
 
 	  <!-- Footer -->
-  	<footer class="py-5 bg-dark">
+  	<footer class="py-4">
     	<div class="container">
       		<p class="m-0 text-center text-white">Copyright &copy; GSC-BAC Information System 2020</p>
     	</div>
@@ -71,3 +85,12 @@
 
 </body>
 </html>
+
+<?php 
+
+}else{
+	header("Location: department.php");
+	exit();
+}
+
+?>

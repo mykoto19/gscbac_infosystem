@@ -27,6 +27,7 @@
             padding: 0px 50px 0px 50px;
             border: 10px;
             background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
+            border-radius: 25px;
         }
 
         .error {
@@ -85,7 +86,7 @@
         </div>
       
         <div class="row">
-          <div class="p-5 col-8-lg mx-auto" style="background-color: #838383; box-shadow: 10px 10px;">
+          <div class="p-5 col-8-lg mx-auto" style="background-color: #838383; box-shadow: 10px 10px; border-radius: 25px;">
 
             <form action="signup_check.php" method="post">
 
@@ -123,7 +124,7 @@
                   <input type="text"
                          class="form-control" 
                          placeholder="Enter Firstname" 
-                         name="fname"><br>
+                         name="fname">
                 <?php }?>
 
                 <?php if (isset($_GET['lname'])) { ?>

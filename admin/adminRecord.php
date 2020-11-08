@@ -42,14 +42,26 @@
 
   	
 
-  	<section>
+  	<section style="margin: 0 100px 0 25px;">
   		<div class="container-fluid">
-			  <div class="row">
-				  <!--Main Content-->
-				  <div class="col-md-8">Main Content</div>
-				<!--Right Side-->
-				  <div class="col-md-4">Right Side</div>
-			  </div>
+			<div class="row">
+
+			  	<!--Right Side-->
+				  <div class="col-md-2">
+						<div class="d-flex flex-column mb-3">
+							<div class="list-group">
+								<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Title Head</a>
+								<a href="#" class="list-group-item list-group-item-action">First item</a>
+								<a href="#" class="list-group-item list-group-item-action">Second item</a>
+								<a href="#" class="list-group-item list-group-item-action">Third Item</a>
+							</div>
+						</div>
+				  </div>
+			  	 
+				<!--Main Content-->
+				  <div class="col-md-10 text-center bg-secondary">Main Content</div>
+				  
+			</div>
 
 		</div>
   	</section>
