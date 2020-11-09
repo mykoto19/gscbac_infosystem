@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +26,7 @@
 	<style>
 		.card {
 			margin: 0 0 0 10px;
-			padding: 0 50px 50px 10px;
+			padding: 0 10px 50px 10px;
 		}
 	</style>
 </head>
@@ -127,7 +133,7 @@
 				
 				<div class="col-sm-3 mx-auto">
 					<div class="card bg-secondary">
-						<div class="card-body"></div>
+						<div class="card-body">
 							<h2>Recommended Items for Negotiating Procurement</h2>
 							<ol>
 								<li>Item 1</li>
@@ -167,3 +173,12 @@
 
 </body>
 </html>
+
+<?php 
+
+}else{
+	header("Location: adminLogin.php");
+	exit();
+}
+
+?>

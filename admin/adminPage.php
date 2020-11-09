@@ -44,7 +44,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
             			<a class="nav-link js-scroll-trigger" href="adminRecord.php">Records</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link js-scroll-trigger" href="adminActivities.html">Activities</a>
+            			<a class="nav-link js-scroll-trigger" href="adminActivities.php">Activities</a>
           			</li>
           			<li class="nav-item">
             			<a class="nav-link js-scroll-trigger" href="adminMonitoring.php">Monitoring</a>

@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +22,7 @@
 	<link href="../css/scrolling-nav.css" rel="stylesheet">
 	  
 	<link rel="stylesheet" href="../main.css">
+
 
 </head>
 <body id="page-top">
@@ -42,24 +49,32 @@
 
   	
 
-  	<section style="margin: 0 100px 0 25px;">
+  	<section style="margin: 0 75px 0 25px;">
   		<div class="container-fluid">
 			<div class="row">
 
 			  	<!--Right Side-->
-				  <div class="col-md-2">
+				  <div class="col-md-3">
 						<div class="d-flex flex-column mb-3">
 							<div class="list-group">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Title Head</a>
-								<a href="#" class="list-group-item list-group-item-action">First item</a>
-								<a href="#" class="list-group-item list-group-item-action">Second item</a>
-								<a href="#" class="list-group-item list-group-item-action">Third Item</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Department/Office</a>
+								<a href="#" class="list-group-item list-group-item-action">CBM</a>
+								<a href="#" class="list-group-item list-group-item-action">CCJE</a>
+								<a href="#" class="list-group-item list-group-item-action">CEIT</a>
+								<a href="#" class="list-group-item list-group-item-action">CTE/CAS</a>
+								<a href="#" class="list-group-item list-group-item-action">CST</a>
+								<a href="#" class="list-group-item list-group-item-action">Baterna</a>
+								<a href="#" class="list-group-item list-group-item-action">Mosqueda</a>
+								<a href="#" class="list-group-item list-group-item-action">Accounting Office</a>
+								<a href="#" class="list-group-item list-group-item-action">OSDS</a>
+								<a href="#" class="list-group-item list-group-item-action">Cashier</a>
+								<a href="#" class="list-group-item list-group-item-action">Library</a>
 							</div>
 						</div>
 				  </div>
 			  	 
 				<!--Main Content-->
-				  <div class="col-md-10 text-center bg-secondary">Main Content</div>
+				  <div class="col-md-9 text-center bg-secondary">Main Content</div>
 				  
 			</div>
 
@@ -84,7 +99,14 @@
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
 
-
-
 </body>
 </html>
+
+<?php 
+
+}else{
+	header("Location: adminLogin.php");
+	exit();
+}
+
+?>

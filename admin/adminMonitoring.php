@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,10 +56,11 @@
   						<input type="submit">
 				</form>
 			</div>
+			<br>
 			<div class="table-responsive">
 				<div class="table table-hover">
 					<table>
-						<thead>
+						<thead class="thead-dark">
 							<tr>
 								<th>Project ID</th>
 								<th>Project Name</th>
@@ -60,7 +68,8 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td></td>
+								<td>proj-01</td>
+								<td>Project Die</td>
 							</tr>
 						</tbody>
 					</table>
@@ -91,3 +100,12 @@
 
 </body>
 </html>
+
+<?php 
+
+}else{
+	header("Location: adminLogin.php");
+	exit();
+}
+
+?>
