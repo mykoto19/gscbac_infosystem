@@ -21,6 +21,11 @@
   <link rel="stylesheet" href="../main.css">
 
   <style>
+
+    body {
+      background-color: #f1f1f1;
+    }
+
     .error {
       background: #F2DEDE;
       color: #A94442;
@@ -28,6 +33,15 @@
       width: 95%;
       border-radius: 5px;
       margin: 20px auto;
+    }
+
+    .card {
+      background-color: #f1f1f1;
+      margin: 0 375px 0 375px;
+      border-radius: 25px;
+      padding: 80px 0 40px 0;
+      background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
+      box-shadow: 10px 10px;
     }
 
     
@@ -55,7 +69,7 @@
     </div>
   </nav>
   <section>
-    <div class="card" style="background-color:#f1f1f1;">
+    <div class="card">
       <div class="card-body">
         <div class="row">      
           <div class="imgcontainer col-8-lg mx-auto">

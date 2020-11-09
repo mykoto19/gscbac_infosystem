@@ -19,6 +19,22 @@
 	  
 	<link rel="stylesheet" href="../main.css">
 
+	<style>
+
+		body {
+			background-color: #f1f1f1;
+		}
+
+		.card {
+			background-color: #f1f1f1;
+			margin: 0 400px 0 400px;
+			border-radius: 25px;
+			padding: 10px 0 40px 0;
+			background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
+			box-shadow: 10px 10px;
+		}
+	</style>
+
 </head>
 <body id="page-top">
 
@@ -40,42 +56,48 @@
   	</nav>
 
   	<section>
-  		<div class="container">
-      		<div class="text-center">
-          		<h1>Supplier Login</h1>
-          		<p>Please login your credentials</p>
-       	 	</div>
-      	</div>
+		<div class="card">
+			<div class="card-body">
+				<div class="container">
+					<div class="text-center">
+						<h1>Supplier Login</h1>
+						<p class="lead">Please login your credentials</p>
+					</div>
+				</div>
+				
+				<br>
 
-    	<div class="container">
-      		<div class="row">      
-        		<div class="col-8-lg mx-auto">
+				<div class="container">
+					<div class="row">      
+						<div class="col-8-lg mx-auto">
 
-          			<form action="#">
-            			<div class="form-group">
-              				<label for="email"><b>Email Address:</b></label>
-                      <input type="email" class="form-control" placeholder="Enter Email" id="email" required>
-              				<br>
-              				<label for="pwd"><b>Password:</b></label>
-              				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-            			</div>
-            			<div class="form-group form-check">
-              				<label class="form-check-label">
-                				<input class="form-check-input" type="checkbox" id="remember"> Remember me
-              				</label>
-            			</div>
-            			<div class="text-center">
-              				<button type="submit" class="btn btn-primary">Login</button>
-              				<button type="reset" class="btn btn-primary">Reset</button>
+							<form action="#">
+								<div class="form-group">
+									<label for="email"><b>Email Address:</b></label>
+							<input type="email" class="form-control" placeholder="Enter Email" id="email" required>
+									<br>
+									<label for="pwd"><b>Password:</b></label>
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+								</div>
+								<div class="form-group form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" id="remember"> Remember me
+									</label>
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">Login</button>
+									<button type="reset" class="btn btn-primary">Reset</button>
+								</div>
+								<div>
+									<a href="../signup.php">Create an account</a>
+								</div>
+							</form>
+
 						</div>
-						<div>
-							<a href="../signup.php">Create an account</a>
-						</div>
-          			</form>
-
-        		</div>
-      		</div>
-    	</div>
+					</div>
+				</div>
+			</div>
+		</div>
   	</section>
 
     <footer class="py-4">

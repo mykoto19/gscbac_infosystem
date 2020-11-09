@@ -29,7 +29,11 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   			height: 250px;
   			width: 300px;
   			margin: 15px auto;
-  		}
+		  }
+		  
+		section {
+			margin: 0 100px 0 50px;
+		}
   	</style>
 
 </head>
@@ -71,6 +75,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   	</header>
 
   	<section>
+		  <!--
   		<div class="container-fluid" style="margin-top: -50px;">
   			<div class="row">
   				<div class="col-sm-8" style="padding-bottom: 35px;">
@@ -79,7 +84,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
           			<input type="submit">
           		</div>
           	</div>
-
+	-->
   			<div class="row">
   				<!-- left side bar -->
   				<div class="col-md-2">Left Side Bar</div>
