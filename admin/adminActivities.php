@@ -63,7 +63,8 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   		<div class="container-fluid">
   			<div class="row">
     			<div class="col-sm-9 mx-auto">
-      				<h2>Schedules</h2>
+      				<h2>Featured Schedule for the Latest Project</h2>
+					<h6>Project #</h6>
       				<div class="table-responsive">
       				<table class="table table-hover">
     					<thead class="thead-dark">

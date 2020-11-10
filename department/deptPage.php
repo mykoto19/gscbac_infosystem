@@ -32,7 +32,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 		  }
 		  
 		section {
-			margin: 0 100px 0 50px;
+			margin: -75px 75px 0 125px;
 		}
   	</style>
 
@@ -86,26 +86,35 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
           	</div>
 	-->
   			<div class="row">
-  				<!-- left side bar -->
-  				<div class="col-md-2">Left Side Bar</div>
-  			
+  				
   				<!-- main content -->
-  				<div class="col-md-8">
+  				<div class="col-md-10">
           
               		<h2 class="text-center">Featured Items</h2>
+					<br>
+					<br>
               		<div class="row">
               			<?php while($item = mysqli_fetch_assoc($featured)) : ?>
 	                  		<div class="col-md-3">
 	                    		<h4 class="text-center"><?= $item['itemName']; ?></h4>
-	                    		<img src="<?= $item['itemImage']; ?>" alt="<?= $item['itemName']; ?>" style="height: 250px; width: 140%;">
+	                    		<img src="<?= $item['itemImage']; ?>" alt="<?= $item['itemName']; ?>" style="height: 250px; width: 120%;">
 	                    		<p class="list-price text-primary"><b>Selling Retailed Price: P<?= $item['itemCost']; ?></b></p>
 	                    		<button type="button" class="btn btn-sm btn-success" onclick="detailsmod(<?= $item['itemID']; ?>)">Details</button>
 	                  		</div> 
               			<?php endwhile; ?>  
                		</div>   
             	</div>
-  				<!-- right side bar -->
-  				<div class="col-md-2">Right Side Bar</div>
+
+				<!-- right side bar -->
+				<div class="col-md-2">				  
+						<div class="d-flex flex-column mb-3">
+							<div class="list-group">
+								<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Supplies</a>
+								<a href="#" class="list-group-item list-group-item-action">Infrastructures</a>
+								<a href="#" class="list-group-item list-group-item-action">Goods and Services</a>
+							</div>
+						</div>				  
+				</div>
   			</div>
   		</div>
   	</section>
