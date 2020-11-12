@@ -76,12 +76,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
       						</tr>
     					</thead>
     					<tbody>
-      						<tr>
-        						<td></td>
-        						<td></td>
-        						<td></td>
-        						<td></td>
-      						</tr>
+      						
       						<tr>
         						<td>June 22, 2020</td>
         						<td></td>

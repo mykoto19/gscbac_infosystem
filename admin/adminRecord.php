@@ -49,15 +49,15 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
 
   	
 
-  	<section style="margin: 0 75px 0 25px;">
+  	<section style="margin: 0 50px 0 25px; background-color: whitesmoke;">
   		<div class="container-fluid">
 			<div class="row">
 
 			  	<!--Right Side-->
-				  <div class="col-md-3">
+				  <div class="col-md-2">
 						<div class="d-flex flex-column mb-3">
 							<div class="list-group">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Department/Office</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Departments/Offices</a>
 								<a href="#" class="list-group-item list-group-item-action">CBM</a>
 								<a href="#" class="list-group-item list-group-item-action">CCJE</a>
 								<a href="#" class="list-group-item list-group-item-action">CEIT</a>
@@ -74,7 +74,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
 				  </div>
 			  	 
 				<!--Main Content-->
-				  <div class="col-md-9 text-center bg-secondary">Main Content</div>
+				  <div class="col-md-10 bg-secondary" style="padding-left: 100px;">Records Show Here</div>
 				  
 			</div>
 

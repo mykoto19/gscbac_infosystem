@@ -47,7 +47,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
             			<a class="nav-link js-scroll-trigger" href="adminActivities.php">Activities</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link js-scroll-trigger" href="adminMonitoring.php">Monitoring</a>
+            			<a class="nav-link js-scroll-trigger" href="adminMonitoring.php">Projects</a>
           			</li>
           			<li class="nav-item">
             			<a class="nav-link js-scroll-trigger" href="adminLogout.php">Logout</a>
@@ -58,10 +58,8 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	</nav>
 
   	<header class="text-white">
-    	<div class="container text-center">
-      		
-      		<h1>Administrator Page</h1>
-      		
+    	<div class="container text-center">      		
+      		<h1>Administrator Page</h1>      		
     	</div>
   	</header>
 
