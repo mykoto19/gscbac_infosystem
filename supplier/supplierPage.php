@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
+if (isset($_SESSION['supplierID']) && isset($_SESSION['companyName'])) {
 
 ?>
 
@@ -14,7 +14,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
   	<meta name="description" content="">
   	<meta name="author" content="">
 
-	<title><?php echo $_SESSION['officeName']; ?> GSC-BAC Information System</title>
+	<title>Client GSC-BAC Information System</title>
 
 	<link rel="stylesheet" href="../style.css">
 
@@ -51,7 +51,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
       	<div class="collapse navbar-collapse" id="navbarResponsive">
         	<ul class="navbar-nav ml-auto">
           	<li class="nav-item">
-            	<a class="nav-link js-scroll-trigger" href="officeLogout.php">Logout</a>
+            	<a class="nav-link js-scroll-trigger" href="suppLogout.php">Logout</a>
           	</li>
         	</ul>
       	</div>
@@ -60,7 +60,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
       
     <header class="bg-secondary text-white" style="height:120px; padding: 100px;">
     	<div class="container text-center">
-      		<h1 class="display-5"><?php echo $_SESSION['officeName']; ?></h1>
+      		<h1 class="display-5">Welcome to the Page <?php echo $_SESSION['companyName']; ?></h1>
     	</div>
   	</header>
 
@@ -96,7 +96,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
 <?php 
 
 }else{
-	header("Location: officeLogin.php");
+	header("Location: suppLogin.php");
 	exit();
 }
 

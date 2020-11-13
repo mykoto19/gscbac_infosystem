@@ -33,6 +33,15 @@
 			background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
 			box-shadow: 10px 10px;
 		}
+
+		.error {
+      		background: #F2DEDE;
+      		color: #A94442;
+      		padding: 10px;
+      		width: 95%;
+      		border-radius: 5px;
+      		margin: 20px auto;
+		}
 	</style>
 
 </head>
@@ -71,13 +80,16 @@
 					<div class="row">      
 						<div class="col-8-lg mx-auto">
 
-							<form action="#">
+							<form action="PHPsuppLogin.php" method="POST">
+								<?php if (isset($_GET['error'])) { ?>
+									<p class="error"><?php echo $_GET['error']; ?></p>
+								<?php } ?>
 								<div class="form-group">
 									<label for="email"><b>Email Address:</b></label>
-							<input type="email" class="form-control" placeholder="Enter Email" id="email" required>
+							<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email">
 									<br>
 									<label for="pwd"><b>Password:</b></label>
-									<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
 								</div>
 								<div class="form-group form-check">
 									<label class="form-check-label">
