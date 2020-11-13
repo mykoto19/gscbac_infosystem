@@ -36,11 +36,10 @@
     }
 
     .card {
-      background-color: #f1f1f1;
+      background-color: #FDD53A;
       margin: 0 375px 0 375px;
       border-radius: 25px;
       padding: 80px 0 40px 0;
-      background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
       box-shadow: 10px 10px;
     }
 

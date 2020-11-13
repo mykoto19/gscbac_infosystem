@@ -26,7 +26,7 @@
             margin: 0px 100px 0px 100px;
             padding: 0px 50px 0px 50px;
             border: 10px;
-            background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
+            background-color: #FDD53A;
             border-radius: 25px;
         }
 

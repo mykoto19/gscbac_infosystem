@@ -17,7 +17,7 @@
   	<!-- Custom styles for this template -->
 	  <link href="../css/scrolling-nav.css" rel="stylesheet">
 	  
-	  <link rel="stylesheet" href="../main.css">
+	  <link rel="stylesheet" href="../main1.css">
 
   	<style>
 
@@ -35,11 +35,10 @@
 		}
 		
 		.card {
-			background-color: #f1f1f1;
+			background-color: #FDD53A;
 			margin: 0 400px 0 400px;
 			border-radius: 25px;
 			padding: 10px 0 40px 0;
-			background: radial-gradient(#FFAA71 5%, #FCA652 15%, #AC4B1C 60%);
 			box-shadow: 10px 10px;
 		}
   	</style>
