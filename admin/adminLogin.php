@@ -18,7 +18,7 @@
   <!-- Custom styles for this template -->
   <link href="../css/scrolling-nav.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../main1.css">
 
   <style>
 

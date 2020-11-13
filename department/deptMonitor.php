@@ -22,7 +22,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   	<!-- Custom styles for this template -->
   	<link href="../css/scrolling-nav.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="../main.css">
+	<link rel="stylesheet" href="../main1.css">
 
 </head>
 <body>

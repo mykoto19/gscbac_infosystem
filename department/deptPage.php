@@ -22,7 +22,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   	<!-- Custom styles for this template -->
 	<link href="../css/scrolling-nav.css" rel="stylesheet">
 	  
-	<link rel="stylesheet" href="../main.css">
+	<link rel="stylesheet" href="../main1.css">
 
   	<style>
   		img.details{
@@ -69,7 +69,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
     	</div>
   	</nav>
 
-  	<header class="bg-secondary text-white" style="height:120px; padding: 100px;">
+  	<header style="height:120px; padding: 100px;">
     	<div class="container text-center">
       		<h1 class="display-5"><?php echo $_SESSION['College']; ?></h1>
     	</div>

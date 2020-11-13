@@ -21,7 +21,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	<!-- Custom styles for this template -->
 	  <link href="../css/scrolling-nav.css" rel="stylesheet">
 	  
-	  <link rel="stylesheet" href="../main.css">
+	  <link rel="stylesheet" href="../main1.css">
 
 </head>
 <body id="page-top">
@@ -57,7 +57,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
     	</div>
   	</nav>
 
-  	<header class="text-white">
+  	<header>
     	<div class="container text-center">      		
       		<h1>Administrator Page</h1>      		
     	</div>

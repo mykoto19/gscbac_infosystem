@@ -24,7 +24,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
   	<!-- Custom styles for this template -->
 	<link href="../css/scrolling-nav.css" rel="stylesheet">
 	  
-	<link rel="stylesheet" href="../main.css">
+	<link rel="stylesheet" href="../main1.css">
 
 	<style>
 		body {
@@ -58,7 +58,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
     	</div>
       </nav>
       
-    <header class="bg-secondary text-white" style="height:120px; padding: 100px;">
+    <header style="height:120px; padding: 100px;">
     	<div class="container text-center">
       		<h1 class="display-5"><?php echo $_SESSION['officeName']; ?></h1>
     	</div>
