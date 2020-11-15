@@ -44,7 +44,7 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
 	 <!-- Navigation -->
   	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     	<div class="container">
-      	<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
+      	<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 50px; margin-right: 15px;"> GSC-BAC Information System</a>
       	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         	<span class="navbar-toggler-icon"></span>
       	</button>
@@ -64,13 +64,17 @@ if (isset($_SESSION['officeID']) && isset($_SESSION['officeName'])) {
     	</div>
   	</header>
 
-  	<section>
-        <div class="text-center">
-            <h3>This is a content</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto">
+				<h3>This is a content</h3>
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 					  Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, 
                       doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-        </div>
+			</div>
+			</div>
+		</div>
   	</section>
 
     <footer class="py-4">

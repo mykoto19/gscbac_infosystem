@@ -31,7 +31,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     	<div class="container">
     		
-      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
+      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 50px; margin-right: 15px;"> GSC-BAC Information System</a>
 
       		<label href="#" class="text-primary">Hi, <?php echo $_SESSION['AdminName'] ; ?></label>
 
@@ -67,12 +67,9 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
     	<div class="container">
       		<div class="row">
         		<div class="col-lg-8 mx-auto">
-          			<h2>This Page</h2>
-          			<p class="lead">This is a great place to talk about your webpage. 
-					  This template is purposefully unstyled so you can use it as a boilerplate or starting point 
-					  for you own landing page designs! This template features:</p>
-
-          			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					  <h2>This Page</h2>
+					  
+          			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 					  Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, 
 					  doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
         		</div>

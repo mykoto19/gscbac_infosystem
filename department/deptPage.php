@@ -52,14 +52,14 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 	<!-- Navigation -->
   	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     	<div class="container">
-      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> GSC-BAC Information System</a>
+      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 50px; margin-right: 15px;"> GSC-BAC Information System</a>
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         		<span class="navbar-toggler-icon"></span>
       		</button>
       		<div class="collapse navbar-collapse" id="navbarResponsive">
         		<ul class="navbar-nav ml-auto">
           			<li class="nav-item">
-            			<a class="nav-link js-scroll-trigger" href="deptMonitor.php">Monitor Project</a>
+            			<a class="nav-link js-scroll-trigger" href="deptMonitor.php">Projects</a>
           			</li>
           			<li class="nav-item">
             			<a class="nav-link js-scroll-trigger" href="deptLogout.php">Logout</a>

@@ -34,7 +34,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 	<!-- Navigation -->
   	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     	<div class="container">
-      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 40px"> <?php echo $_SESSION['College']; ?> Monitoring</a>
+      		<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="gsc.png" alt="Logo" style="width: 50px; margin-right: 15px;"> <?php echo $_SESSION['College']; ?></a>
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         		<span class="navbar-toggler-icon"></span>
       		</button>
@@ -47,6 +47,12 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
       		</div>
     	</div>
 	  </nav>
+
+	  <header style="height:120px; padding: 100px;">
+    	<div class="container text-center">
+      		<h1 class="display-5">Projects</h1>
+    	</div>
+  	</header>
 	  
 	  <section>
 	  <section id="about">
