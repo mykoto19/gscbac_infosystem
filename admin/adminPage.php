@@ -40,14 +40,17 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
       		</button>
       		<div class="collapse navbar-collapse" id="navbarResponsive">
         		<ul class="navbar-nav ml-auto">
-          			<li class="nav-item">
-            			<a class="nav-link js-scroll-trigger" href="adminRecord.php">Records</a>
+					<li class="nav-item">
+            			<a class="nav-link js-scroll-trigger" href="adminItems.php">Manage Items</a>
           			</li>
-          			<li class="nav-item">
+					<li class="nav-item">
             			<a class="nav-link js-scroll-trigger" href="adminActivities.php">Activities</a>
           			</li>
           			<li class="nav-item">
             			<a class="nav-link js-scroll-trigger" href="adminMonitoring.php">Projects</a>
+          			</li>
+					<li class="nav-item">
+            			<a class="nav-link js-scroll-trigger" href="adminRecord.php">Records</a>
           			</li>
           			<li class="nav-item">
             			<a class="nav-link js-scroll-trigger" href="adminLogout.php">Logout</a>

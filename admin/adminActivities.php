@@ -41,14 +41,6 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
       		</button>
       		<div class="collapse navbar-collapse" id="navbarResponsive">
         		<ul class="navbar-nav ml-auto">
-        			<li class="nav-item">
-            			<a class="nav-link js-scroll-trigger" href="#sched">Schedules</a>
-          			</li>
-
-          			<li class="nav-item">
-            			<a class="nav-link js-scroll-trigger" href="#recommend">Items</a>
-          			</li>
-
           			<li class="nav-item">
             			<a class="nav-link" href="adminPage.php">Back to Home</a>
           			</li>
@@ -59,7 +51,7 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
 
   	 
 
-  	<section id="sched" style="margin: 25px 0 0 50px;">
+  	<section style="margin: 25px 0 0 50px;">
   		<div class="container-fluid">
   			<div class="row">
     			<div class="col-sm-9 mx-auto">
@@ -130,13 +122,13 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
 				<div class="col-sm-3 mx-auto">
 					<div class="card bg-secondary">
 						<div class="card-body">
-							<h2>Recommended Items for Negotiating Procurement</h2>
+							<h2>Featured Scheduled Projects</h2>
 							<ol>
-								<li>Item 1</li>
-								<li>Item 2</li>
-								<li>Item 3</li>
-								<li>Item 4</li>
-								<li>Item 5</li>
+								<li>Project 1</li>
+								<li>Project 2</li>
+								<li>Project 3</li>
+								<li>Project 4</li>
+								<li>Project 5</li>
 							</ol>
 
 							<div class="text-center">
