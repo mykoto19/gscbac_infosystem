@@ -17,7 +17,8 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
 	<title>Admin Page GSC-BAC Information System</title>
 
 	<!-- Bootstrap core CSS -->
-  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
   	<!-- Custom styles for this template -->
 	<link href="../css/scrolling-nav.css" rel="stylesheet">

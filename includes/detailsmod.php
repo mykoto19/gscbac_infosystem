@@ -45,7 +45,7 @@
           </div>
           <div class="modal-footer">
             <button class="btn btn-default" onclick="closeModal()">Close</button>
-            <button class="btn btn-warning" type="submit"><span class="glyphicon glyphicon-shopping-cart"></span> Save Item</button>
+            <button class="btn btn-warning" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Save Item</button>
           </div>
         </div>
       </div>

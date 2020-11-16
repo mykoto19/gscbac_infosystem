@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="../style.css">
 
 	<!-- Bootstrap core CSS -->
-  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
   	<!-- Custom styles for this template -->
 	  <link href="../css/scrolling-nav.css" rel="stylesheet">
@@ -20,10 +21,7 @@
 	  <link rel="stylesheet" href="../main1.css">
 
   	<style>
-
-		body {
-			background-color: #f1f1f1;
-		}		
+	
 
     	.error {
       		background: #F2DEDE;

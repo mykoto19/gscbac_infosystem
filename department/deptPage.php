@@ -17,7 +17,8 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 	<title><?php echo $_SESSION['College']; ?> GSC-BAC Information System</title>
 
 	<!-- Bootstrap core CSS -->
-  	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
   	<!-- Custom styles for this template -->
 	<link href="../css/scrolling-nav.css" rel="stylesheet">
@@ -32,7 +33,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 		  }
 		  
 		section {
-			margin: -75px 75px 0 100px;
+			margin: -75px 100px 0 0;
 		}
 
   	</style>
@@ -87,10 +88,22 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
           	</div>
 	-->
   			<div class="row">
+
+			  	<!-- right side bar -->
+				<div class="col-md-4" style="padding-left: 125px;">				  
+						<div class="d-flex flex-column mb-3">
+							<div class="list-group">
+								<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Supplies</a>
+								<a href="#" class="list-group-item list-group-item-action">Infrastructures</a>
+								<a href="#" class="list-group-item list-group-item-action">Goods</a>
+								<a href="#" class="list-group-item list-group-item-action">Services</a>
+							</div>
+						</div>				  
+				</div>
   				
   				<!-- main content -->
 				
-  				<div class="col-md-8" style="background-color: whitesmoke;">
+  				<div class="col-md-8" style="background-color: whitesmoke; padding: 0 0 0 50px">
           
               		<h2 class="text-center">Featured Items</h2>
 					<br>
@@ -107,18 +120,6 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
                		</div>
 				 
             	</div>
-
-				<!-- right side bar -->
-				<div class="col-md-4" style="padding-left: 125px;">				  
-						<div class="d-flex flex-column mb-3">
-							<div class="list-group">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Supplies</a>
-								<a href="#" class="list-group-item list-group-item-action">Infrastructures</a>
-								<a href="#" class="list-group-item list-group-item-action">Goods</a>
-								<a href="#" class="list-group-item list-group-item-action">Services</a>
-							</div>
-						</div>				  
-				</div>
   			</div>
   		</div>
   	</section>
