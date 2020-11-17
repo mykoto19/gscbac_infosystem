@@ -17,18 +17,20 @@
     <!-- Custom styles for this template -->
   	<link href="css/scrolling-nav.css" rel="stylesheet">
 
-    <link href="style1.css" rel="stylesheet">
-
     <link rel="stylesheet" href="main1.css">
 
     <style>
-        section div.container {
-            margin: 0px 100px 0px 100px;
-            padding: 0px 50px 0px 50px;
-            border: 10px;
-            background-color: #FDD53A;
-            border-radius: 25px;
+
+        body {
+          background-color: #9AD3BC;
         }
+
+        .card {
+		    	background-color: #838383;
+			    border-radius: 25px;
+			    padding: 10px 0 40px 0;
+			    box-shadow: 10px 10px;
+		    }
 
         .error {
             background: #F2DEDE;
@@ -77,16 +79,16 @@
     </div>
   </nav>
 
-  <section>
-  	<div class="container mt-0">
-      <div class="d-flex flex-column mb-3">
-        <div class="p-3 text-center">
-            <h1><b>Sign Up</b></h1>
+  <section class="container-fluid col-8 mx-auto">
+  	<div class="card">
+      <div class="card-body">
+        <div class="container text-center">
+            <h1 class="card-title"><b>Sign Up</b></h1>
             <p>Please fill in this form to sign up for bidding.</p>	
         </div>
       
         <div class="row">
-          <div class="p-5 col-8-lg mx-auto" style="background-color: #838383; box-shadow: 10px 10px; border-radius: 25px;">
+          <div class="col-8-lg mx-auto">
 
             <form action="signup_check.php" method="post">
 
@@ -172,7 +174,7 @@
 
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary">Sign Up</button>
-                  <button type="reset" class="btn btn-primary">Cancel</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
                 </div>
                 <div>
 							    <a href="supplier/suppLogin.php">Already have an account?</a>

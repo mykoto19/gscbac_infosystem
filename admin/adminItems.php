@@ -49,11 +49,16 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
   	<section style="margin: 0 75px 0 75px;">
   		<div class="container-fluid">
   		    <div class="row">
-              <div class="col-lg-2 mx-auto bg-warning">
-                    <div class="text-center">
-                       <h4>Left Content</h4>
-                    </div>
-  		        </div>
+              	<div class="col-lg-2 mx-auto">
+				  <div class="d-flex flex-column mb-3">
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Items</a>
+							<a href="#" class="list-group-item list-group-item-action">Goods</a>
+							<a href="#" class="list-group-item list-group-item-action">Planning</a>
+							<a href="#" class="list-group-item list-group-item-action">Services</a>
+						</div>
+					</div>
+  		    	</div>
   		        <div class="col-lg-8 mx-auto bg-info">
                     <div class="text-light" style="padding: 0 50px 0 50px;">
                        <h4>Middle Content</h4>
@@ -64,11 +69,6 @@ if (isset($_SESSION['AdminID']) && isset($_SESSION['AdminName'])) {
                       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 					  Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, 
                       doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-                    </div>
-  		        </div>
-                <div class="col-lg-2 mx-auto bg-warning">
-                    <div class="text-center">
-                       <h4>Right Content</h4>
                     </div>
   		        </div>
   		    </div>

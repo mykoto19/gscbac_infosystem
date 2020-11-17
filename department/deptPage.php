@@ -33,7 +33,8 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
 		  }
 		  
 		section {
-			margin: -75px 100px 0 0;
+			margin: 0 75px 0 75px;
+			
 		}
 
   	</style>
@@ -76,26 +77,18 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
     	</div>
   	</header>
 
-  	<section>
-		  <!--
-  		<div class="container-fluid" style="margin-top: -50px;">
-  			<div class="row">
-  				<div class="col-sm-8" style="padding-bottom: 35px;">
-          			<label for="searchItem">Search: </label>
-          			<input type="search" name="searchItem">
-          			<input type="submit">
-          		</div>
-          	</div>
-	-->
+  	<section>  
+  		<div class="container-fluid">			
+
   			<div class="row">
 
 			  	<!-- right side bar -->
-				<div class="col-md-4" style="padding-left: 125px;">				  
+				<div class="col-md-2 mx-auto">				  
 						<div class="d-flex flex-column mb-3">
 							<div class="list-group">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Supplies</a>
-								<a href="#" class="list-group-item list-group-item-action">Infrastructures</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Purchases</a>
 								<a href="#" class="list-group-item list-group-item-action">Goods</a>
+								<a href="#" class="list-group-item list-group-item-action">Infrastructures</a>
 								<a href="#" class="list-group-item list-group-item-action">Services</a>
 							</div>
 						</div>				  
@@ -103,7 +96,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
   				
   				<!-- main content -->
 				
-  				<div class="col-md-8" style="background-color: whitesmoke; padding: 0 0 0 50px">
+  				<div class="col-md-8 mx-auto" style="background-color: whitesmoke;">
           
               		<h2 class="text-center">Featured Items</h2>
 					<br>
@@ -149,7 +142,7 @@ if (isset($_SESSION['deptID']) && isset($_SESSION['deptName'])) {
       function detailsmod(id){
       	var data = {"id" : id};
       	jQuery.ajax({
-      		url : <?= BASEURL; ?> +'../includes/detailsmod.php',
+      		url : <?= BASEURL; ?> +'includes/detailsmod.php',
       		method : "post",
       		data : data,
       		success : function(data){

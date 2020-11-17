@@ -22,6 +22,9 @@
 
   	<style>
 	
+		body {
+			background-color: #9AD3BC;
+		}
 
     	.error {
       		background: #F2DEDE;
@@ -34,7 +37,6 @@
 		
 		.card {
 			background-color: #FDD53A;
-			margin: 0 400px 0 400px;
 			border-radius: 25px;
 			padding: 10px 0 40px 0;
 			box-shadow: 10px 10px;
@@ -60,19 +62,19 @@
     	</div>
   	</nav>
 
-  	<section>
+  	<section class="container-fluid col-8 mx-auto">
 		<div class="card">
 			<div class="card-body">
 				<div class="container">
 					<div class="text-center">
-						<h1>Department Login</h1>
+						<h1 class="card-title">Department Login</h1>
 						<p class="lead">Please login your credentials</p>
 					</div>
 				</div>
 
 				<br>
 
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">      
 						<div class="col-8-lg mx-auto">
 
@@ -87,7 +89,7 @@
 									<label for="pwd"><b>Password:</b></label>
 									<input type="password" class="form-control" placeholder="Enter password" name="pwd">
 								</div>
-								<div class="form-group form-check">
+								<div class="form-group form-check col-md-8">
 									<label class="form-check-label">
 										<input class="form-check-input" type="checkbox" id="remember"> Remember me
 									</label>

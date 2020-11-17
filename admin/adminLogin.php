@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -24,7 +24,7 @@
   <style>
 
     body {
-      background-color: #f1f1f1;
+      background-color: #9AD3BC;
     }
 
     .error {
@@ -38,13 +38,10 @@
 
     .card {
       background-color: #FDD53A;
-      margin: 0 375px 0 375px;
       border-radius: 25px;
       padding: 80px 0 40px 0;
       box-shadow: 10px 10px;
     }
-
-
     
   </style>
 
@@ -69,13 +66,13 @@
       </div>
     </div>
   </nav>
-  <section>
+  <section class="container-fluid col-8 mx-auto">
     <div class="card">
       <div class="card-body">
         <div class="row">      
-          <div class="imgcontainer col-8-lg mx-auto">
+          <div class="imgcontainer col-12 mx-auto">
             <img src="avatar1.png" alt="Avatar" class="avatar" style="height: 150px; width: 150px;">
-            <h3>ADMIN Login</h3>
+            <h3 class="card-title">ADMIN Login</h3>
           </div>
         </div>  
 
@@ -95,7 +92,7 @@
                 <label for="pswd"><b>Password:</b></label>
                 <input type="password" class="form-control" placeholder="Enter password" name="pswd">
               </div>
-              <div class="form-group form-check">
+              <div class="form-group form-check col-md-8">
                 <label class="form-check-label">
                   <input class="form-check-input" type="checkbox" id="remember"> Remember me
                 </label>
